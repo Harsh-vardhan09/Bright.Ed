@@ -1,0 +1,258 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    
+    
+    
+  }
+  
+  /* Card Section */a/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: 30px;
+  }
+  
+  .search-bar input {
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: 30px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Mentor Section */
+  .mentor-section {
+    padding: 20px;
+    background:transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px ;
+    max-width: 95%;
+    height: 600px;
+    backdrop-filter: blur(10px);
+
+
+  }
+  
+  .mentor-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    position: relative;
+    top: 60px;
+    flex-wrap: nowrap;
+    
+  }
+  
+  .mentor-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    
+  }
+  
+  .mentor-card {
+    flex: 0 0 auto;
+    width: 120px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Default hidden for filtering */
+  }
+  
+  .mentor-card.show {
+    display: block; /* Show when matched */
+  }
+  
+  .mentor-photo {
+    width: 80px;
+    height: 80px;
+    background: #eee;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+  
+  .mentor p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Arrow Buttons */
+  .arrow {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bolder;
+    margin: 25px;
+  }
+  
+  .arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    left: -25px;
+    z-index: 10;
+  }
+  
+  .right-arrow {
+    position: absolute;
+    right: -25px;
+    z-index: 10;
+  }
+  
+  .card-section {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex-wrap: nowrap;
+
+  }
+  
+  .mentor-card {
+    min-width: 200px;
+    height: 220px;
+    background: #f6f6f6;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+  
+  /* Arrow Buttons */
+  .arrow {
+    border: none;
+    background:transparent;
+    color: rgb(15, 14, 14);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+  }
+  
+  .arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Mentor List */
+  .mentor-list {
+    margin: 20px;
+    padding: 20px;
+    background: #faf9f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mentor {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .mentor-photo img {
+    width: 80px;
+    height: 80px;
+    background: #ddd;
+    border-radius: 50%;
+  }
+  
+  
+  .mentor p {
+    margin: 5px 0 0;
+  }
+  
+  .mentor-section h2{
+    font-size: 16px;
+    color: #000;;
+    word-spacing: 10px;
+  }
+  .mentor-section b{
+    border: #000;
+    color:#000;
+  }
+  .mentor-section h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 45px;
+    color: #000;
+  }
+  .mentor-section p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFF;
+  }
+  .mentor-card P{
+    color: #000;
+  }
+
+  .button-class{
+    background-color: #AD49E1;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 15px;
+    color: #fff;
+    position: relative;
+    top: 17px;
+    left: 1000px;
+    font-weight: bolder;
+
+  }  
+
+  .button-class:hover{
+    background-color: #62118e;
+    
+  }

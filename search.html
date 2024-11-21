@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright.Ed</title>
+  <link rel="stylesheet" href="style-engine.css">
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#features">Search</a>
+    <a href="#testemonial">Clients</a>
+    <a href="#footer">Contact Us</a>
+  </div>
+ <header id="header">
+
+    <h1 class="logo">
+        <button class="image-button" onclick="openNav()">
+            <img src="drawer.webp" alt="drawer">
+        </button>
+        <a href="index.html">Bright.Ed</a>
+    </h1>
+    <nav>
+        <ul>
+
+            <li><a href="index.html">Explore</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="end-btns">
+        <a href="#" class="cta-btn">Log Out</a>
+    </div>
+  </header>
+
+
+   
+  <div class="container">
+    
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for colleges...">
+        <div id="searchResults" class="results"></div>
+      </div>
+      <button id="searchButton">Search</button>
+      
+    </div>
+
+    <!-- Search Results -->
+    
+     
+ 
+
+     
+    
+
+    <!-- Custom List -->
+    
+    <ul id="collegeList" class="college-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

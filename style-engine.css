@@ -1,0 +1,327 @@
+body {
+  display: flex; /* Use Flexbox for alignment */
+  justify-content: center; 
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #f6f6f6;
+  background-image: url(idea\ \(1\).jpg);
+  background-size: cover; /* Ensure background image covers the screen */
+  background-position: center; /* Center background image */
+  
+}
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  background: #f6f6ff;
+  border-radius: 8px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+  /* justify-content: center; */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  backdrop-filter: blur(80%);
+}
+
+header {
+  /* background-color: #7A1CAC; */
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(50px);
+  /* position: fixed;
+  top: 0; */
+
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  /* z-index: 1000; Ensures the header stays on top of other elements */
+  
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7A1CAC;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li{
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+nav ul li:hover{
+  background-color: #a5a5a5;
+  border-radius: 10px;
+ 
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+.cta-btn {
+  background-color: #fff;
+  color: #AD49E1;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.image-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.image-button img {
+  display: block; /* Remove any extra space around the image */
+  width: 50%;
+  height: 50%;
+}
+.logo button{
+  background-color: none;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+ 
+ 
+}
+
+
+/* search */
+
+.search-bar {
+  display: flex;
+   
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  /* margin-right: 10px; */
+  /* border-radius: 20px; */
+  background-color: none;
+  border: none;
+  width: 95.8%;
+  /* margin: 0 3px ; */
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.search-bar button:hover {
+  background: #0056b3;
+}
+
+.results, .college-list {
+  list-style: none;
+  padding: 0;
+ 
+}
+
+
+
+.college-list li {
+  display: flex;
+  justify-content: space-between; /* Space between text and buttons */
+  align-items: center; /* Align text and buttons vertically */
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #9c9c9c3b;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr 2fr;
+  
+ 
+}
+
+.college-list li button {
+  padding: 5px 10px;
+  border: none;
+  font-size: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Buttons alignment container */
+.college-list li div {
+  display: flex;
+  flex-direction: column; /* Align buttons in a vertical column */
+  gap: 5px; /* Add space between the buttons */
+}
+
+.move-up, .move-down {
+  background-color: #ffc107;
+  color: #000;
+  margin-left: 5px;
+}
+
+.move-up:hover, .move-down:hover {
+  background-color: #e0a800;
+}
+
+.delete {
+  background-color: #dc3545;
+  color: #fff;
+  margin-left: 5px;
+ 
+}
+
+.delete:hover {
+  background-color: #c82333;
+}
+.college-list li:hover{
+  background-color: #d3d3d3;
+} 
+
+.results{
+/* border: #000 solid 1px; */
+ width: 91%;
+ margin-left: 18px;
+ 
+}
+.search-box{
+  display: flex;
+  flex-direction: column;
+  flex:10;
+  border: black 2px solid;
+  border-radius: 10px;
+  background-color: #fff
+  
+}
+
+#searchresults{
+  background-color: #0056b3;
+
+}
+
+.search-item{
+  padding:8px;
+  
+  margin-bottom: 8px;
+  border-radius: 4px;
+ 
+}
+.search-item:hover{
+  background-color: #a5a5a5;
+
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color:#FAF9F6; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  padding: 0;
+  /* backdrop-filter: blur(50px); */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #640D5F;
+  display: block;
+  transition: 0.3s;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #FAF9F6;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+ background-color:none ;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* @media screen and (max-width: 768px) {
+  header .logo button {
+      display: inline;
+  }
+
+  header nav, header .end-btns {
+      display: none;
+  }
+} */
+.image-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.image-button img {
+  display: block; /* Remove any extra space around the image */
+  width: 30px;
+  height: 30px;
+}
+.logo button{
+  background-color: none;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+ 
+ 
+}
